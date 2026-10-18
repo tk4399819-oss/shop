@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Online Store</title>
+<link rel="stylesheet" href="css/store.css">
+</head>
+<body>
+<div class="announce" id="announce"></div>
+<header class="top">
+  <div class="wrap nav">
+    <a href="#/" class="logo" id="logo">Store</a>
+    <nav>
+      <a href="#/" data-nav="home">Home</a>
+      <a href="#/shop" data-nav="shop">Shop all</a>
+      <a href="#/shop/Home" data-nav="Home">Home &amp; living</a>
+      <a href="#/shop/Electronics" data-nav="Electronics">Electronics</a>
+    </nav>
+    <div class="spacer"></div>
+    <form class="search" id="searchForm"><span>🔍</span><input id="searchInput" placeholder="Search products" aria-label="Search"></form>
+    <button class="icon-btn" id="cartBtn" aria-label="Open cart">🛒<span class="badge" id="cartCount">0</span></button>
+  </div>
+</header>
+
+<main class="wrap" id="app"></main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="fgrid">
+      <div><b id="fName" style="font-size:18px"></b><p id="fTag" style="color:var(--muted)"></p></div>
+      <div><h4>Shop</h4><a href="#/shop">All products</a><a href="#/shop/Apparel">Apparel</a><a href="#/shop/Accessories">Accessories</a></div>
+      <div><h4>Support</h4><a id="fMail" href="#"></a><a id="fPhone" href="#"></a><a href="admin.html">Admin login</a></div>
+      <div><h4>Newsletter</h4><form class="news" id="newsForm"><input type="email" required placeholder="Your email"><button class="btn dark" style="padding:10px 16px">Join</button></form></div>
+    </div>
+    <div class="copy"><span id="fCopy"></span><span>Secure checkout · Easy returns</span></div>
+  </div>
+</footer>
+
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer" aria-label="Cart">
+  <header><span>Your cart</span><button class="icon-btn" id="closeCart" aria-label="Close">✕</button></header>
+  <div class="body" id="cartBody"></div>
+  <footer id="cartFoot"></footer>
+</aside>
+<div class="toast" id="toast"></div>
+
+<script src="js/data.js"></script>
+<script src="js/store.js"></script>
+</body>
+</html>
